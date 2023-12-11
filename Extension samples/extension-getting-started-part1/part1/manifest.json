@@ -14,7 +14,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.openai.com/*"],
+      "matches": ["https://www.openai.com"],
       "js": ["content.js"]
     }
   ],
