@@ -29,3 +29,18 @@
   background-color: #fff;
   overflow: auto;
 }
+
+button {
+  background-color: #4CAF50; /* 按鈕的背景顏色 */
+  border: none; /* 按鈕的邊框 */
+  color: white; /* 按鈕文字的顏色 */
+  padding: 10px 20px; /* 按鈕內容的填充 */
+  text-align: center; /* 文字居中 */
+  text-decoration: none; /* 取消文字下劃線 */
+  display: inline-block; /* 使按鈕以行內塊方式顯示 */
+  font-size: 16px; /* 文字大小 */
+  margin: 4px 2px; /* 按鈕的外邊距 */
+  cursor: pointer; /* 鼠標懸停時的指示符 */
+  border-radius: 5px; /* 圓角 */
+}
+

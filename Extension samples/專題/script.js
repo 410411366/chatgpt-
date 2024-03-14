@@ -1,3 +1,14 @@
+function showLanguageOptions() {
+  // 在這裡顯示語言選擇的界面，讓用戶選擇需要翻譯的語言
+}
+
+function translateConversation(language) {
+  var chatLog = document.getElementById('chatLog');
+  // 獲取對話框內容
+  var conversation = chatLog.innerText;
+  // 使用翻譯 API 將對話框內容翻譯成選擇的語言
+  // 將翻譯後的內容顯示在預覽視窗或者新的對話框中
+}
 
 
 // 創建一個新的按鈕
