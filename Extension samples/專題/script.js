@@ -1,5 +1,34 @@
 function showLanguageOptions() {
-  // 在這裡顯示語言選擇的界面，讓用戶選擇需要翻譯的語言
+  // 創建一個包含常見語言選項的下拉menu
+  var languageOptions = document.createElement('select');
+
+  // 添加語言選項
+  var languages = ['英文', '法文', '德文', '西班牙文', '中文', '日文', '韓文']; // 這是您想提供的語言選項
+  languages.forEach(function(language) {
+      var option = document.createElement('option');
+      option.text = language;
+      option.value = language;
+      languageOptions.appendChild(option);
+  });
+
+  // 添加一個確定按鈕
+  var confirmButton = document.createElement('button');
+  confirmButton.textContent = '確定';
+  confirmButton.onclick = function() {
+      var selectedLanguage = languageOptions.value;
+      // 在這裡添加將選擇的語言應用於翻譯的代碼
+      translateConversation(selectedLanguage);
+  };
+
+  // 將下拉菜單和確定按鈕添加到一個容器中
+  var languageOptionsContainer = document.createElement('div');
+  languageOptionsContainer.appendChild(languageOptions);
+  languageOptionsContainer.appendChild(confirmButton);
+
+  // 在某個特定的區域顯示語言選擇界面，這裡假設有一個名為 'languageOptionsPanel' 的元素
+  var languageOptionsPanel = document.getElementById('languageOptionsPanel');
+  languageOptionsPanel.innerHTML = ''; // 清空容器
+  languageOptionsPanel.appendChild(languageOptionsContainer);
 }
 
 function translateConversation(language) {
