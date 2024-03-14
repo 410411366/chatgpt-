@@ -18,3 +18,14 @@
 .chatGPT-message {
   background-color: #C2E0FF;
 }
+
+.preview-window {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 200px;
+  height: 150px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  overflow: auto;
+}

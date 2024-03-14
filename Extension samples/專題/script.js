@@ -19,3 +19,21 @@ translateButton.onclick = function() {
 
 // 將按鈕添加到頁面上
 document.body.appendChild(translateButton);
+
+function showPreview() {
+  var previewWindow = document.getElementById('previewWindow');
+  // 假設對話記錄存在一個名為 conversations 的數組中
+  var conversations = [...]; // 假設這是您的對話記錄
+  // 清空預覽視窗
+  previewWindow.innerHTML = '';
+  // 將最近的對話添加到預覽視窗中
+  conversations.forEach(function(conversation) {
+      var messageElement = document.createElement('div');
+      messageElement.textContent = conversation.message;
+      previewWindow.appendChild(messageElement);
+  });
+}
+
+// 在某個事件觸發時顯示預覽視窗，例如點擊按鈕
+document.getElementById('previewButton').addEventListener('click', showPreview);
+
